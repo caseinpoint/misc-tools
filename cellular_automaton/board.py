@@ -82,7 +82,7 @@ class Board:
 
         new_cells = []
         for _ in range(self.height):
-            new_cells.append([None for _ in range(self.width)])
+            new_cells.append([None] * self.width)
 
         live_neighbors = []
         for h in range(self.height):
